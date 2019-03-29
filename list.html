@@ -1,0 +1,197 @@
+<!DOCTYPE >
+<html lang="uz_UZ">
+<head>
+<title>List -  va css | @w3_uz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	box-sizing: border-box;
+} body {
+	background-color: black;
+	color: white; font-size: 14px;
+	margin: 0; padding: 15px;
+	counter-reset: section;
+}
+
+.disc { /* ● */
+	list-style: disc;
+}.circle { /* ° */
+	list-style: circle;
+}.square { /* ■ */
+	list-style: square;
+}.upper-roman { /* I, II, III */
+	list-style: upper-roman;
+}.lower-alpha { /* a, b, c */
+	list-style: lower-alpha;
+}.none { /*  */
+	list-style: none;
+}
+
+h1 {
+	counter-reset: subsection;
+} h1::before {
+	counter-increment: section;
+	content: "Ro'yxat " counter(section) ". ";
+} h2::before {
+	counter-increment: subsection;
+	content: counter(section) "." counter(subsection) " ";
+}
+</style>	
+</head>
+<body>
+<h1>ul > Tartiblanmagan/Ajratilmagan ro'yxatlar misoli:</h1>
+<ul style="width: 33.33%;  float: left;" class="disc">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ul>
+
+<ul style="width: 33.33%;  float: left;" class="circle">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ul>
+
+<ul style="width: 33.33%;  float: left;" class="square">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ul>
+
+<hr> 
+<h1>ol > Tartiblangan/Ajratilgan ro'yxatlar misoli:</h1>
+
+<h2>Raqamlar:</h2>
+<ol type="1">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ol>
+
+<h2>Arab / Katta raqamlari:</h2>
+<ol style="width: 50%;  float: left;" type="I">
+	<li>HTML - </li>
+	<li>CSS - </li>
+	<li>JavaScript - </li>
+</ol>
+			
+<ol style="width: 50%;  float: left;" class="upper-roman">
+	<li>HTML - class</li>
+	<li>CSS - class</li>
+	<li>JavaScript - class</li>
+</ol>
+			
+<h2>Arab / Kichik raqamlari:</h2>
+<ol type="i">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ol>
+
+<h2>Katta harflar:</h2>
+<ol type="A">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ol>
+
+<h2>Kichik harflar:</h2>
+<ol style="width: 50%;  float: left;" type="a">
+	<li>HTML - html</li>
+	<li>CSS - html</li>
+	<li>JavaScript - html</li>
+</ol>
+
+<ol class="lower-alpha" style="width: 50%;  float: left;">
+	<li>HTML - class</li>
+	<li>CSS - class</li>
+	<li>JavaScript - class</li>
+</ol>
+
+<h2>Ro'yhat ichiga yana ro'yhat...</h2>
+<ul>
+	<li>HTML</li>
+	<li>CSS
+		<ul>
+			<li>margin, padding, float...</li>
+			<li>background, color, font...</li>
+		</ul>
+	</li>
+<li>JavaScript</li>
+</ul>
+
+<h2>none > ul va ol-largaham ishlayveradi...</h2>
+<ol class="none">
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>JavaScript</li>
+</ol>
+
+<hr> 
+<h1>dl > dt > dd</h1>
+<dl>
+	<dt>HTML</dt>
+		<dd>- qora ichimlik</dd>
+			<dt>Sut</dt>
+		<dd>- oq sovuq ichimlik</dd>
+</dl>
+
+<hr> 
+<h1>Menu > Gorizontal Ro'yhat/List</h1>
+<style>
+	ul.gorizontal-menu {
+	   padding: 0;
+	} ul.gorizontal-menu li {
+	    display: inline;
+	} ul.gorizontal-menu li a {
+	    background-color: white; color: #000;
+	    padding: 7px 10px;
+	    text-decoration: none;
+	    border-radius: 10px;
+	} ul.gorizontal-menu li a:hover {
+	    background-color: #000; color: white;
+	}
+</style>
+			
+<ul class="gorizontal-menu">
+	<li><a href="#">HTML</a></li>
+	<li><a href="#">CSS</a></li>
+	<li><a href="#">JavaScript</a></li>
+</ul>  
+
+<hr> 
+<h1>Menu > Vertikal Ro'yhat/List</h1>
+<style>
+	ul.vertikal-menu {
+	    padding: 0;
+	} ul.vertikal-menu li {
+	    display: block;
+	} ul.vertikal-menu li a {
+	    background-color: white; color: #000;
+	    margin: 15px 0; padding: 10px 15px;
+	    text-decoration: none;
+	    width: 100%
+	} ul.vertikal-menu li a:hover, a:active  {
+	    background-color: #000; color: white;
+	} ul.vertikal-menu a:link, a:visited {
+	text-align : left;
+	margin: 0 ;padding : 14px 25px;
+	display : inline-block;
+	}
+</style>
+			
+
+<ul class="vertikal-menu">
+	<li><a href="#">HTML</a></li>
+	<li><a href="#">CSS</a></li>
+	<li><a href="#">JavaScript</a></li>
+</ul> 
+			
+			Teg > #ul #ol #li #dl #dt #dd | #gorizontal_menu va #vertikal_menu 
+		<footer>Telegram kanal > @w3_uz</footer>
+	</body>
+</html>
+
+<!-- Creator by ASAuz/@asakew -->
+<!-- Telegram kanal > @w3_uz -->
